@@ -24,11 +24,11 @@ def move(path):
 
 if __name__ == "__main__":
     
-    des_root = "./dataset/mvisa/data/visa"   # generated unified dataset path
+    des_root = "./dataset/mvisa/dat/visa"   # generated unified dataset path
     move(des_root)
     id = 0
 
-    Visa_Dataset = Visa_dataset("Your root path/visa")   # original dataset path
+    Visa_Dataset = Visa_dataset("/visa")   # original dataset path
     id = Visa_Dataset.make_VAND(binary=True,to_255=True,des_path_root=des_root,id=id) 
     print(id)
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     move(des_root)
     id = 0
 
-    Mvtec_Dataset = Mvtec_dataset("Your root path/mvtec")  #original dataset path
+    Mvtec_Dataset = Mvtec_dataset("/mvtec")  #original dataset path
     id = Mvtec_Dataset.make_VAND(binary=True,to_255=True,des_path_root=des_root,id=id)
     print(id)
     
