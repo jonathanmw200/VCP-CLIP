@@ -68,8 +68,8 @@ class metaSolver(object):
 
 if __name__ == '__main__':
     
-    runner = metaSolver(root="./dataset/mvisa/data/visa", meta_path="./dataset/mvisa/data/meta_visa.json", datasets= "visa")  #new_anomaly_set
+    runner = metaSolver(root="VCP-CLIP/dataset/mvisa/data/visa", meta_path="VCP-CLIP/dataset/mvisa/data/meta_visa.json", datasets= "visa")  #new_anomaly_set
     runner.run()
 
-    runner = metaSolver(root="./dataset/mvisa/data/mvtec", meta_path="./dataset/mvisa/data/meta_mvtec.json", datasets= "mvtec")  #new_anomaly_set
+    runner = metaSolver(root="VCP-CLIP/dataset/mvisa/data/mvtec", meta_path="VCP-CLIP/dataset/mvisa/data/meta_mvtec.json", datasets= "mvtec")  #new_anomaly_set
     runner.run()
